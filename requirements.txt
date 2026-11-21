@@ -1,0 +1,14 @@
+# Core versions observed in original notebook; not a fully tested lockfile
+transformers==4.49.0
+tokenizers==0.21.4
+huggingface-hub==0.36.2
+opacus==1.6.0
+pandas==2.2.3
+scikit-learn
+numpy
+matplotlib
+datasets
+accelerate
+tqdm
+jedi>=0.16
+# PyTorch/CUDA: use the compatible version provided by your Colab runtime

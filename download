@@ -1,0 +1,13 @@
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+data/
+checkpoints/
+.env
+.env.*
+!*.example

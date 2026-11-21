@@ -1,0 +1,85 @@
+{
+  "project": "Differentially Private Classification with Foundation Models II",
+  "model": "DNABERT-2-117M",
+  "dataset": "GUE prom_core_all",
+  "fine_tuning": "BiTFiT",
+  "privacy_delta": 1e-05,
+  "target_epsilons": [
+    2,
+    4,
+    8
+  ],
+  "nonprivate_test_accuracy": 0.8027,
+  "best_private_method": "DP-SAT",
+  "best_private_epsilon": 8,
+  "best_private_test_accuracy": 0.7695945945945946,
+  "experiments": [
+    {
+      "Method": "DP-SAT",
+      "Target epsilon": 2,
+      "Actual epsilon": 1.9959105535222963,
+      "Validation accuracy": 0.7449324324324325,
+      "Test accuracy": 0.7456081081081081,
+      "MIA ROC-AUC": 0.4946334999999999,
+      "Attack Advantage": 0.011,
+      "Attack Accuracy": 0.4955
+    },
+    {
+      "Method": "DP-SGD",
+      "Target epsilon": 2,
+      "Actual epsilon": 1.9959105535222963,
+      "Validation accuracy": 0.7519003378378378,
+      "Test accuracy": 0.765372,
+      "MIA ROC-AUC": 0.5066021249999999,
+      "Attack Advantage": 0.0195,
+      "Attack Accuracy": 0.5075
+    },
+    {
+      "Method": "DP-SAT",
+      "Target epsilon": 4,
+      "Actual epsilon": 3.9965081622559593,
+      "Validation accuracy": 0.762035472972973,
+      "Test accuracy": 0.7690878378378379,
+      "MIA ROC-AUC": 0.509430375,
+      "Attack Advantage": 0.0229999999999999,
+      "Attack Accuracy": 0.5
+    },
+    {
+      "Method": "DP-SGD",
+      "Target epsilon": 4,
+      "Actual epsilon": 3.9965081622559593,
+      "Validation accuracy": 0.7601351351351351,
+      "Test accuracy": 0.763007,
+      "MIA ROC-AUC": 0.50556,
+      "Attack Advantage": 0.0294999999999999,
+      "Attack Accuracy": 0.5155
+    },
+    {
+      "Method": "DP-SAT",
+      "Target epsilon": 8,
+      "Actual epsilon": 7.994407210518382,
+      "Validation accuracy": 0.7778716216216216,
+      "Test accuracy": 0.7695945945945946,
+      "MIA ROC-AUC": 0.503240125,
+      "Attack Advantage": 0.0379999999999999,
+      "Attack Accuracy": 0.5145
+    },
+    {
+      "Method": "DP-SGD",
+      "Target epsilon": 8,
+      "Actual epsilon": 7.994407210518382,
+      "Validation accuracy": 0.7561233108108109,
+      "Test accuracy": 0.760811,
+      "MIA ROC-AUC": 0.507414625,
+      "Attack Advantage": 0.018,
+      "Attack Accuracy": 0.4935
+    }
+  ],
+  "limitations": [
+    "Single random seed",
+    "Loss-based membership inference attack",
+    "DP-SAT privacy proof requires verification",
+    "Privacy accounting depends on implementation assumptions",
+    "DP-SGD test accuracy values carried forward from previously recorded evaluations"
+  ]
+}
