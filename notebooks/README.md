@@ -10,4 +10,4 @@ Use Colab GPU, mount your own Drive, and verify `RESULTS_DIR`. Running training 
 
 **Important:** The original DP-SGD cells were built in a different Colab session and use different dataset objects from later DP-SAT cells. The common setup intentionally reproduces the later data preparation; verify that this split is identical to the original DP-SGD experiment before comparing new runs. The original privacy claims, Poisson sampling, RNG and accountant choices require independent verification.
 
-No notebook outputs were fabricated. Original source remains unchanged in GitHub.
+No notebook outputs were fabricated. Original source remains unchanged in GitHub. 
